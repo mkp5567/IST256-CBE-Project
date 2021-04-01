@@ -18,6 +18,11 @@ a {
   font-family: modesto;
 }
 
+p{
+  font-size: 36pt;
+  text-align: center;
+}
+
 .topnav {
   overflow: hidden;
   background-color: white;
@@ -38,7 +43,7 @@ a {
 }
 
 .topnav a.active {
-  background-color: red;
+  background-color: pink;
   color: white;
 }
 
@@ -50,10 +55,31 @@ a {
   font-size: 18px;
 }
 
+section{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .container{
+  margin-top: 40px;
+  margin: 40px;
   display: flex;
   flex-direction: row;
   max-width: device-width;
   justify-content: center;
   padding: 15px 10px;
+  flex-wrap: wrap;
+}
+
+.container2{
+  margin-top: 40px;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  max-width: device-width;
+  justify-content: center;
+  padding: 15px 10px;
+  flex-wrap: wrap;
 }
