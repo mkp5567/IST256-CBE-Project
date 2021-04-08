@@ -2,6 +2,15 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
+
+  .header{
+    padding: 40px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+    font-family: modesto;
+  }
   
 
   .topnav {
