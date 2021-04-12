@@ -63,23 +63,18 @@ section{
 }
 
 .container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px 200px;
+  justify-content: space-evenly;
   margin-top: 40px;
-  margin: 40px;
-  display: flex;
-  flex-direction: row;
-  max-width: device-width;
-  justify-content: center;
   padding: 15px 10px;
-  flex-wrap: wrap;
 }
 
 .container2{
-  margin-top: 40px;
-  margin: 40px;
-  display: flex;
-  flex-direction: row;
-  max-width: device-width;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px 200px;
+  justify-content: space-evenly;
   padding: 15px 10px;
-  flex-wrap: wrap;
 }
