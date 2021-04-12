@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next){
-    axios.get('').then(function(response){
+    axios.get('http://www.recipepuppy.com/api/?i=potato,salt&q=fries&p=3').then(function(response){
         res.send(response.data);
     });
 })
