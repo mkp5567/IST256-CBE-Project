@@ -4,6 +4,15 @@ body {
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  .header{
+    padding: 40px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+    font-family: modesto;
+  }
   
   .topnav {
     color: rgb(55,55,145);
@@ -26,7 +35,7 @@ body {
   }
   
   .topnav a.active {
-    background-color: orange;
+    background-color: pink;
     color: rgb(55,55,145);
   }
   
