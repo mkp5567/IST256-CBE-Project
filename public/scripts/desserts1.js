@@ -3,15 +3,6 @@ $(document).ready(function(){
     displayDesserts();
 });
 
-// function doAjaxRequest(){
-//     $.ajax({
-//         method: 'GET',
-//         url: '/desserts',
-//         success: function(data){
-//             console.log(data);
-//         }
-//     });
-// }
 
 function displayDesserts(){
     var milkshakeRecipe = ["chocolate ice cream", "chocolate syrup", "cocoa powder", "chocolate", "milk", "sugar"];
