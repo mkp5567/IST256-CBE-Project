@@ -12,3 +12,7 @@ function doAjaxRequest(){
         }
     });
 }
+
+function getFoodData(data) {
+    
+}
