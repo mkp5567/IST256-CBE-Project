@@ -2,6 +2,6 @@
 * Begin my inputting npm start into the VS code terminal
 * From there input 127.0.0.1:3000 into your browsers searchbar 
 * This should bring you to the Home Page 
-* Add (-) and the branch names to the end of 127.0.0.1:3000 to navigate to the other pages 
-* Branches include merchapp, entree, dessert, about-us, checkout, merch
-* Member Assignments: homepage/Javod - appetizers, entrees, desserts/Anily - about-us/Mia - checkout/Ethan
+* Click on natigation bar to navigate to any page  
+* Once on a navigated page, click on a picture to be sent to that restaurants website
+* Member Assignments: Full stack development and javascript - group effort through zoom
