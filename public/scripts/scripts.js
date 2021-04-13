@@ -3,12 +3,11 @@ $(document).ready(function(){
     doAjaxRequest();
 });
 
-
 function doAjaxRequest(){
     $.ajax({
         method: 'GET',
         url: '/apps',
-        success: (data) => {
+        success: function(data){
             console.log(data);
         }
     });
