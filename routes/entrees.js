@@ -6,19 +6,12 @@ router.get('/', function(req, res, next){
     axios.get('http://www.recipepuppy.com/api/?i=tomato,salt&q=pasta&q=pizzacrust&q=garlic&p=3').then(function(response){
         res.send(response.data);
     });
-});
-
-router.get('/', function(req, res, next){
     axios.get('http://www.recipepuppy.com/api/?i=meat,butter&q=steak').then(function(response){
-        res.send(response.data);
-    });
+      res.send(response.data);
+  });
+  axios.get('http://www.recipepuppy.com/api/?i=fish,lemon&q=salmon').then(function(response){
+    res.send(response.data);
 });
-
-router.get('/', function(req, res, next){
-    axios.get('http://www.recipepuppy.com/api/?i=fish,lemon&q=salmon').then(function(response){
-        res.send(response.data);
-    });
 });
-
 
 module.exports = router;
