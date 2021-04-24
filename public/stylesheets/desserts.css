@@ -4,6 +4,14 @@ body {
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  h2{
+    text-align: center;
+    margin:0;
+    color: rgb(55,55,145);
+    font-size: 75px;
+    font-family:Arial, Helvetica, sans-serif
+  }
   
 
   .dessertpage{
