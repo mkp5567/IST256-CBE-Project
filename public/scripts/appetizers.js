@@ -1,19 +1,21 @@
 $(document).ready(function(){
     console.log("Ready!");
-    displayRecipes();
+    doAjaxRequest();
 });
 
-function displayRecipes(){
-    var friesRecipe= ["Black pepper", "Oregano", "Olive oil", "Garlic", "Salt", "Potatoes", "Onions"];
-    
-    var content1 = $("#recipe1");
 
+function doAjaxRequest(){
+    $.ajax({
+        type: 'GET',
+        url: '/apps'
+    }).done(function(response){
+        console.log(response);
+        displayRecipes(response);
+    });
+}
 
-    for (i=0; i<friesRecipe.length; i++){
-        let ul = $(`<ul></ul>`).appendTo(content1);
-        let li = $(`<li>${friesRecipe[i]}</li>`).appendTo(ul);
-    }
-
-
-
+function displayRecipes(data){
+    let info = $('#information');
+    info.append($(`<h4>${data.results[1].title}</h4>`));
+  
 }
