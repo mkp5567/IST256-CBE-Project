@@ -41,6 +41,7 @@ function displayDessertData(data){
     let ul = $(`<ul></ul>`).appendTo(recipe1);
 
     data.results.forEach(ingredient=>{
+        let h4 = $(`<h4>${ingredient.title}</h4>`).appendTo(ul)
         let li = $(`<li>${ingredient.ingredients}</li>`).appendTo(ul)
     });
 }
@@ -50,6 +51,7 @@ function displayCookieRecipe(data){
     let ul = $(`<ul></ul>`).appendTo(recipe2);
 
     data.results.forEach(ingredient=>{
+        let h4 = $(`<h4>${ingredient.title}</h4>`).appendTo(ul)
         let li = $(`<li>${ingredient.ingredients}</li>`).appendTo(ul)
     });
 }
@@ -59,6 +61,7 @@ function displayIcecreamRecipe(data){
     let ul = $(`<ul></ul>`).appendTo(recipe3);
 
     data.results.forEach(ingredient=>{
+        let h4 = $(`<h4>${ingredient.title}</h4>`).appendTo(ul)
         let li = $(`<li>${ingredient.ingredients}</li>`).appendTo(ul)
     });
 }
