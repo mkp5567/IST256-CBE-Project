@@ -3,28 +3,24 @@ $(document).ready(function(){
     // displayDesserts();
     getDessertData();
     getCookieData();
+    getIcecreamData();
 });
 
-
-// function displayDesserts(){
-//     var milkshakeRecipe = ["chocolate ice cream", "chocolate syrup", "cocoa powder", "chocolate", "milk", "sugar"];
-
-//     var recipe1 = $("#milkshake");
-
-//     let ul = $(`<ul></ul>`).appendTo(recipe1);
-    
-//     for(i = 0; i < milkshakeRecipe.length; i++){
-        
-//         let li = $(`<li>${milkshakeRecipe[i]}</li>`).appendTo(ul)
-//     }
-// }
-
+//-----------------------------------------------------------------
 function getDessertData(){
     $.ajax({
         type: 'GET',
         url: '/desserts'
     }).done(function(response){
         displayDessertData(response);
+    });
+
+}
+function getIcecreamData(){
+    $.ajax({
+        type: 'GET',
+        url: '/desserts/2'
+    }).done(function(response){
         displayIcecreamRecipe(response);
     });
 
@@ -32,13 +28,13 @@ function getDessertData(){
 function getCookieData(){
     $.ajax({
         type: 'GET',
-        url: '/desserts2'
+        url: '/desserts/1'
     }).done(function(response){
         displayCookieRecipe(response);
     });
 
 }
-
+//----------------------------------------------------------------
 function displayDessertData(data){
     var recipe1 = $("#milkshake");
 
@@ -49,7 +45,7 @@ function displayDessertData(data){
     });
 }
 function displayCookieRecipe(data){
-    var recipe2 = $("#cookie");
+    var recipe2 = $("#sugarcookies");
 
     let ul = $(`<ul></ul>`).appendTo(recipe2);
 
