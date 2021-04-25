@@ -12,10 +12,10 @@ router.get('/', function(req, res, next){
 //       res.send(response.data);
 //   });
 // });
-// router.get('/', function(req, res, next){
-//   axios.get('http://www.recipepuppy.com/api/?i=milk&q=icecream').then(function(response){
-//     res.send(response.data);
-// });
-// });
+router.get('/', function(req, res, next){
+  axios.get('http://www.recipepuppy.com/api/?i=milk&q=icecream').then(function(response){
+    res.send(response.data);
+});
+});
 
 module.exports = router;

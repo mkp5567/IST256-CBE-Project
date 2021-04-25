@@ -2,6 +2,7 @@ $(document).ready(function(){
     console.log("Ready!");
     // displayDesserts();
     getDessertData();
+    getCookieData();
 });
 
 
@@ -24,6 +25,16 @@ function getDessertData(){
         url: '/desserts'
     }).done(function(response){
         displayDessertData(response);
+        displayIcecreamRecipe(response);
+    });
+
+}
+function getCookieData(){
+    $.ajax({
+        type: 'GET',
+        url: '/desserts2'
+    }).done(function(response){
+        displayCookieRecipe(response);
     });
 
 }
@@ -32,6 +43,24 @@ function displayDessertData(data){
     var recipe1 = $("#milkshake");
 
     let ul = $(`<ul></ul>`).appendTo(recipe1);
+
+    data.results.forEach(ingredient=>{
+        let li = $(`<li>${ingredient.ingredients}</li>`).appendTo(ul)
+    });
+}
+function displayCookieRecipe(data){
+    var recipe2 = $("#cookie");
+
+    let ul = $(`<ul></ul>`).appendTo(recipe2);
+
+    data.results.forEach(ingredient=>{
+        let li = $(`<li>${ingredient.ingredients}</li>`).appendTo(ul)
+    });
+}
+function displayIcecreamRecipe(data){
+    var recipe3 = $("#icecream");
+
+    let ul = $(`<ul></ul>`).appendTo(recipe3);
 
     data.results.forEach(ingredient=>{
         let li = $(`<li>${ingredient.ingredients}</li>`).appendTo(ul)
