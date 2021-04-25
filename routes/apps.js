@@ -7,12 +7,12 @@ router.get('/', function(req, res, next){
         res.send(response.data);
     });
 });
-router.get('/', function(req, res, next){
+router.get('/0', function(req, res, next){
     axios.get('http://www.recipepuppy.com/api/?i=tomato,cheese&q=pizza&p=3').then(function(response){
         res.send(response.data);
     });
 });
-router.get('/', function(req, res, next){
+router.get('/1', function(req, res, next){
     axios.get('http://www.recipepuppy.com/api/?i=lettuce,chicken&q=taco&p=3').then(function(response){
         res.send(response.data);
     });
