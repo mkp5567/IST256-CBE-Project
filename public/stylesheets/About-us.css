@@ -3,6 +3,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 
+.placeholder{
+    text-align: right;
+}
+
   .header{
     padding: 40px;
     text-align: center;
@@ -68,7 +72,7 @@ h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3{
-    color:rgb(55, 55, 145);
+    color:rgb(250, 175, 36);
     font-size:100%;
     text-align: center;
     font-weight:bolder;
@@ -94,7 +98,4 @@ p{
     color:rgb(55, 55, 145);
     text-align: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-placeholder{
-    text-align: right;
 }
