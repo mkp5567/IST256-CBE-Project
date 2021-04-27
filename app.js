@@ -36,7 +36,7 @@ app.use('/desserts', dessertsRouter);
 app.use('/entrees', entreesRouter);
 app.use('/merch', merchRouter);
 app.use('/about-us', aboutusRouter);
-app.use('/member', memberRouter);
+app.use('/members', memberRouter);
 
 
 module.exports = app;

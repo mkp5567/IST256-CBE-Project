@@ -1,0 +1,42 @@
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <div>
+        <h3>please work</h3>
+    </div>
+    <br>
+    <div>
+        <form method="post" action="/members" id="form">
+            Name: <input type="text" name="name"><br>
+            Email: <input type="text" name="email"><br>
+            Birthdate: <input type="text" name="birthDate"><br>
+            Address: <input type="text" name="address"><br>
+            Phone Number: <input type="text" name="phoneNumber"><br>
+            <br>
+            <input type="submit" value="save">
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        <button id="b1" onclick="displayMembers()">Get Members</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <p id="tableData"> Data:</p>
+        <ol id="memberList"></ol>
+    </div>
+    <div>
+        <button id="deleteBtn">Member entry deleted</button>
+    </div>
+
+</body>
