@@ -1,10 +1,8 @@
 //copied from zyBooks figure 11.8.7
 
-// models/student.js
-//const mongoose = require("../db");
-//const schema = mongoose.schema(
-const mongoose = require('mongoose');
-const MemberSchema = mongoose.Schema({
+const mongoose = require("../db");
+const schema = new mongoose.Schema(
+    {
         name: {
             desc: "First and Last",
             trim: true,
@@ -36,13 +34,6 @@ const MemberSchema = mongoose.Schema({
     }
 )
 
-/*const Student = db.model("Student", {
-    name:      String,
-    gpa:       { type: Number, min: 0, max: 4 },
-    birthDate: { type: Date, default: Date.now },
-    interests: [ String ]
-});
-
-module.exports = Student;*/
+module.exports = mongoose.model("member",schema);
 
 

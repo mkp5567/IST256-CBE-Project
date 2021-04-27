@@ -11,7 +11,7 @@ exports.create = (req, res) => {
         });
     }
 
-    // Create a Note
+    // Create a member
     const mem = new Member({
         name:req.body.name,
         email:req.body.email,
@@ -23,8 +23,10 @@ exports.create = (req, res) => {
     // Save Note in the database
     mem.save()
     .then(data => {
-        res.send(data);
-    }).catch(err => {
+        //res.send(data);
+        res.status(200).redirect('/member');
+    })
+    .catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while creating the new member."
         });
