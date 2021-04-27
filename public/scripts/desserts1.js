@@ -10,7 +10,7 @@ $(document).ready(function(){
 function getDessertData(){
     $.ajax({
         type: 'GET',
-        url: '/desserts'
+        url: '/desserts/'
     }).done(function(response){
         displayDessertData(response);
     });
