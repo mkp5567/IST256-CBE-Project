@@ -9,7 +9,7 @@ $(document).ready(function(){
 function getPizzaData(){
    $.ajax({
        type: 'GET',
-       url: '/entrees'
+       url: '/entrees/'
    }).done(function(response){
        displayPizzaData(response);
    });
@@ -39,8 +39,9 @@ function displayPizzaData(data){
 
    let ul = $(`<ul></ul>`).appendTo(recipe1);
 
+
    data.results.forEach(ingredient=>{
-    let h4 = $(`<h4>${ingredient.title}</h4>`).appendTo(ul)
+        let h4 = $(`<h4>${ingredient.title}</h4>`).appendTo(ul)
        let li = $(`<li>${ingredient.ingredients}</li>`).appendTo(ul)
    });
 }

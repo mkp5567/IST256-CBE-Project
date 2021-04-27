@@ -2,11 +2,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const bodyParser = require('body-parser');
-const Member = require("./models/member");
+// const bodyParser = require('body-parser');
+// const Member = require("./models/member");
 
 //this was added
-//const Student = require("./models/student");
+const Student = require("./models/student");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -16,7 +16,7 @@ var dessertsRouter = require('./routes/desserts');
 var entreesRouter = require('./routes/entrees');
 var merchRouter = require('./routes/merch');
 var aboutusRouter = require('./routes/about-us');
-var memberRouter = require('./routes/member');
+// var memberRouter = require('./routes/member');
 
 var app = express();
 
@@ -27,7 +27,7 @@ app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));//
 //this was added 
 app.use(express.static(path.join(__dirname, 'public'),{extensions: 'html'}));
-app.use(bodyParser.urlencoded({ extended: true }))
+// app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -36,7 +36,7 @@ app.use('/desserts', dessertsRouter);
 app.use('/entrees', entreesRouter);
 app.use('/merch', merchRouter);
 app.use('/about-us', aboutusRouter);
-app.use('/member', memberRouter);
+// app.use('/member', memberRouter);
 
 
 module.exports = app;
