@@ -27,6 +27,7 @@ var currentMemberList;
 
 function displayMembers(){
     console.log("/scripts.js displayMembers called");
+    index=0
     $.ajax({
         method:"GET",
         url:"/members",
@@ -35,21 +36,16 @@ function displayMembers(){
             console.log("data from displayMembers" + data);
             currentMemberList = data.slice();
             $("#memberList").empty();
-          /* data.forEach(function(arrayItem){
+          data.forEach(function(arrayItem){
                 var item = arrayItem.name;
                 console.log("array item nate: " + item);
-                $("#memberList").append("<li>"+item+"<li>");
-            });*/
-
-           for(let i=0;i<data.length; i++){
-                var item = data[i];
-                $("#memberList").append("<li>"+item+"<li>");
-            }
+                $("#memberList").append("<li>"+item+"</li>");
+            });
         }
     });
 
 
-$("deleteBtn").click(function() {
+$("#deleteBtn").click(function() {
 
     // should get the ID of the selected item
     // This is just hard coded.
