@@ -27,9 +27,9 @@ var currentMemberList;
 
 function displayMembers(){
     console.log("/scripts.js called");
-    $ajax({
+    $.ajax({
         method:"GET",
-        url:'/members',
+        url:'/member',
         success: (data) =>{
             console.log("/scritps.js works")
             console.log("data from displayMembers"+data)
@@ -46,11 +46,11 @@ function displayMembers(){
 
 $("deleteBtn").click(function() {
     console.log("first item in list: " + currentMemberList[0]._id);
-    var itemToDelete = currentMemberList[0].id;
+    var itemToDelete = currentMemberList[0]._id;
 
         $.ajax({
             type: "DELETE",
-            url: "/members/" + itemToDelete
+            url: "/member/" + itemToDelete
         }).done(function(data){
             displayMembers();
         }).fail(function(jqXHR){

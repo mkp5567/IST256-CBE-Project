@@ -5,7 +5,6 @@ var logger = require('morgan');
 const bodyParser = require('body-parser');
 const Member = require("./models/member");
 
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -25,7 +24,7 @@ app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));//
 //this was added 
 app.use(express.static(path.join(__dirname, 'public'),{extensions: 'html'}));
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -34,7 +33,6 @@ app.use('/desserts', dessertsRouter);
 app.use('/entrees', entreesRouter);
 app.use('/merch', merchRouter);
 app.use('/about-us', aboutusRouter);
-
 app.use('/members', memberRouter);
 
 module.exports = app;
