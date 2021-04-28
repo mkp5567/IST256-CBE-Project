@@ -14,7 +14,10 @@ var dessertsRouter = require('./routes/desserts');
 var entreesRouter = require('./routes/entrees');
 var merchRouter = require('./routes/merch');
 var aboutusRouter = require('./routes/about-us');
+<<<<<<< HEAD
 
+=======
+>>>>>>> a4f713417151852b57380d7eee58cf99713372ec
 var membersRouter = require('./routes/members');
 
 var app = express();
@@ -35,7 +38,10 @@ app.use('/desserts', dessertsRouter);
 app.use('/entrees', entreesRouter);
 app.use('/merch', merchRouter);
 app.use('/about-us', aboutusRouter);
+<<<<<<< HEAD
 
+=======
+>>>>>>> a4f713417151852b57380d7eee58cf99713372ec
 app.use('/members', membersRouter);
 
 module.exports = app;
