@@ -7,6 +7,7 @@ var currentMemberList;
 
 function displayMembers(){
     console.log("/scripts.js displayMembers called");
+    index=0
     $.ajax({
         method:"GET",
         url:"/members",
