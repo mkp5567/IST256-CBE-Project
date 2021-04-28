@@ -29,17 +29,22 @@ function displayMembers(){
     console.log("/scripts.js called");
     $.ajax({
         method:"GET",
-        url:'/member',
+        url:"/members",
         success: (data) =>{
             console.log("/scritps.js works")
             console.log("data from displayMembers"+data)
             currentMemberList = data.slice();
             $("#memberList").empty();
-            data.forEach(function (arrayItem){
+          /* data.forEach(function(arrayItem){
                 var item = arrayItem.name;
                 console.log("array item nate: " + item);
                 $("#memberList").append("<li>"+item+"<li>");
-            });
+            });*/
+
+           for(let i=0;i<data.length; i++){
+                var item = data[i];
+                $("#memberList").append("<li>"+item+"<li>");
+            }
         }
     });
 

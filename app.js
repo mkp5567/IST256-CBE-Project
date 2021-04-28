@@ -13,7 +13,7 @@ var dessertsRouter = require('./routes/desserts');
 var entreesRouter = require('./routes/entrees');
 var merchRouter = require('./routes/merch');
 var aboutusRouter = require('./routes/about-us');
-var memberRouter = require('./routes/member');
+var membersRouter = require('./routes/members');
 
 var app = express();
 
@@ -33,6 +33,6 @@ app.use('/desserts', dessertsRouter);
 app.use('/entrees', entreesRouter);
 app.use('/merch', merchRouter);
 app.use('/about-us', aboutusRouter);
-app.use('/members', memberRouter);
+app.use('/members', membersRouter);
 
 module.exports = app;

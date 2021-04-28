@@ -36,9 +36,9 @@ exports.create = (req, res) => {
 // Retrieve and return all members from the database.
 exports.findAll = (req, res) => {
     Members.find()
-    .then(members => {
+    .then((members) => {
         res.send(200).send(members);
-    }).catch(err => {
+    }).catch((err) => {
         res.status(500).send({
             message: err.message || "Some error occurred while retrieving new member."
         });
