@@ -29,11 +29,7 @@ function displayMembers(){
     console.log("/scripts.js displayMembers called");
     $.ajax({
         method:"GET",
-<<<<<<< HEAD
-        url:'/members',
-=======
         url:"/members",
->>>>>>> a4f713417151852b57380d7eee58cf99713372ec
         success: (data) =>{
             console.log("/scritps.js displayMembers succeeded");
             console.log("data from displayMembers" + data);
@@ -41,11 +37,6 @@ function displayMembers(){
             $("#memberList").empty();
           /* data.forEach(function(arrayItem){
                 var item = arrayItem.name;
-<<<<<<< HEAD
-                console.log("array item name: " + item);
-                $("#memberList").append("<li>" + item + "</li>");
-            });
-=======
                 console.log("array item nate: " + item);
                 $("#memberList").append("<li>"+item+"<li>");
             });*/
@@ -54,7 +45,6 @@ function displayMembers(){
                 var item = data[i];
                 $("#memberList").append("<li>"+item+"<li>");
             }
->>>>>>> a4f713417151852b57380d7eee58cf99713372ec
         }
     });
 
