@@ -7,6 +7,7 @@ h2{
   }
   
   h3{
+    text-align: center;
     margin:0;
     color: rgb(55,55,145);
     font-size: 30px;
@@ -62,12 +63,12 @@ h2{
     }
 
   form{
-    font-size: 44px;
+    font-size: 30px;
     text-align: center;
   }
 
   input{
-    height: 40px;
+    height: 30px;
     width: 30%;
   }
 
@@ -76,10 +77,19 @@ h2{
   }
 
   #tableData{
-    font-size: 64px;
+    font-size: 40px;
     text-align: center;
   }
 
   #memberList > li{
+    list-style: none;
     text-align: center;
   }
+
+  #b1.container {  
+    width: 300px;  
+    height: 300px; 
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    }  

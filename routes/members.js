@@ -8,8 +8,7 @@ const Member = require("../models/member");
 router.get("/", memCnt1.findAll);
 router.post("/", memCnt1.create);
 
-router.put("/", memCnt1.Update);
-
+//router.put("/", memCnt1.Update);
 router.delete("/:_id", memCnt1.delete);
 
 module.exports = router;
