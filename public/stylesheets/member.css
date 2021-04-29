@@ -60,3 +60,26 @@ h2{
       font-size: 15px;
       font-family:Arial, Helvetica, sans-serif
     }
+
+  form{
+    font-size: 44px;
+    text-align: center;
+  }
+
+  input{
+    height: 40px;
+    width: 30%;
+  }
+
+  button{
+    justify-content: center;
+  }
+
+  #tableData{
+    font-size: 64px;
+    text-align: center;
+  }
+
+  #memberList > li{
+    text-align: center;
+  }

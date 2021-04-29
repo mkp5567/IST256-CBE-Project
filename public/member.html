@@ -11,7 +11,7 @@
     crossorigin="anonymous">
     </script>
     <script src="scripts/scripts.js"></script>
-    <link rel="stylesheet" href="/stylesheets/homepage.css">
+    <link rel="stylesheet" href="/stylesheets/member.css">
 </head>
 
 
@@ -44,11 +44,11 @@
     <br>
     <div>
         <form method="post" action="/members" id="form">
-            Name: <input type="text" name="name"><br>
-            Email: <input type="text" name="email"><br>
-            Birthdate: <input type="text" name="birthDate"><br>
-            Address: <input type="text" name="address"><br>
-            Phone Number: <input type="text" name="phoneNumber"><br>
+            Name: <input type="text" name="name" placeholder="Your Name"><br>
+            Email: <input type="text" name="email" placeholder="Email Address"><br>
+            Birthdate: <input type="text" name="birthDate" placeholder="mm/dd/yyyy"><br>
+            Address: <input type="text" name="address" placeholder="Address"><br>
+            Phone Number: <input type="text" name="phoneNumber" placeholder="Phone Number"><br>
             <br>
             <input type="submit" value="save">
         </form>
@@ -56,7 +56,7 @@
     <br>
     <br>
     <div>
-        <button id="b1" onclick="displayMembers()">Get Members</button>
+        <button id="b1" onclick="displayMembers()" style="text-align:center;">Get Members</button>
     </div>
     <br>
     <br>
