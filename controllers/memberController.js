@@ -1,3 +1,5 @@
+//content was taken fromhttps://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/ retreval date: 4/28/21 for CRUD.
+
 /**
  * Member controller - REST logic goes here
  */
@@ -54,6 +56,39 @@ exports.findAll = (req, res) => {
     }).catch((err) => {
         res.status(500).send({
             message: err.message || "Error Occurred",
+        });
+    });
+};
+
+// Update a member identified 
+exports.update = (req, res) => {
+    // Validate Request
+    if(!req.body.content) {
+        return res.status(400).send({
+            message: "member content can not be empty"
+        });
+    }
+
+    // Find member and update it with the request body
+    Member.findByIdAndUpdate(req.params.memberId, {
+        title: req.body.title || "Untitled Note",
+        content: req.body.content
+    }, {new: true})
+    .then(member => {
+        if(!member) {
+            return res.status(404).send({
+                message: "Member not found with id " + req.params.memberId
+            });
+        }
+        res.send(member);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Member not found with id " + req.params.memberId
+            });                
+        }
+        return res.status(500).send({
+            message: "Error updating member with id " + req.params.memberId
         });
     });
 };

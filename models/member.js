@@ -1,4 +1,4 @@
-//copied from zyBooks figure 11.8.7
+//content was taken from lecture and demo videos retreval date: 4/28/21 for CRUD.
 
 const mongoose = require("../db");
 const schema = new mongoose.Schema(

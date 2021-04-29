@@ -1,12 +1,6 @@
-//copied from zyBooks figure 11.8.7
+//content was taken fromhttps://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/ retreval date: 4/28/21 for CRUD.
 
 var mongoose = require("mongoose");
-
-/*mongoose.set("useUnifiedTopology", true);
-mongoose.connect("mongodb+srv://group2:ist256group2@cluster0.nj3me.mongodb.net/myMember?retryWrites=true&w=majority", 
-   { useNewUrlParser: true });*/
-   
-
 
 // Connecting to the database
 mongoose.connect("mongodb+srv://ranchero4:hellopsu64@cluster0.yrkth.mongodb.net/mydb?retryWrites=true&w=majority", {

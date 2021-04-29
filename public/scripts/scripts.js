@@ -1,3 +1,5 @@
+//content was taken from https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/ retreval date: 4/28/21 for CRUD.
+
 $(document).ready(function(){
     console.log("Ready!");
     displayMembers();
@@ -23,6 +25,9 @@ function displayMembers(){
             });
         }
     });
+
+
+
 
 
 $("#deleteBtn").click(function() {
