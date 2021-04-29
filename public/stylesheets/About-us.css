@@ -7,40 +7,41 @@ body {
     text-align: right;
 }
 
-  .header{
-    padding: 40px;
-    text-align: center;
-    background-color: orange;
-    color: white;
-    font-size: 30px;
-    font-family: modesto;
-  }
-  
+.header{
+  padding: 40px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  font-size: 30px;
+  font-family: modesto;
+}
 
-  .topnav {
-    color: rgb(55,55,145);
-    overflow: hidden;
-    background-color: white;
-  }
-  
-  .topnav a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    color: rgb(55,55,145);
-  }
-  
-  .topnav a:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: pink;
-    color: rgb(55,55,145);
-  } 
+.topnav {
+  color: rgb(55,55,145);
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: rgb(55,55,145);
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: pink;
+  color: rgb(55,55,145);
+}
+
+a {text-decoration: none; }
   /*some content was taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav retroeved date: 3/30/21 for inspiration in making the site.*/
 
 body{ 
