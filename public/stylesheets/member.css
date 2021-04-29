@@ -71,10 +71,6 @@ h2{
     width: 30%;
   }
 
-  button{
-    justify-content: center;
-  }
-
   #tableData{
     font-size: 64px;
     text-align: center;
